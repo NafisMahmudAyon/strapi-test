@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "daily_expenses",
+  "info": {
+    "singularName": "daily-expense",
+    "pluralName": "daily-expenses",
+    "displayName": "daily_expense",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "enumeration",
+      "enum": [
+        "Ayon",
+        "Asif",
+        "Mahin",
+        "Zubaer"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Amount": {
+      "type": "decimal"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Processing": {
+      "type": "enumeration",
+      "enum": [
+        "Waiting",
+        "Approved"
+      ]
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Paid",
+        "Due"
+      ]
+    },
+    "Bill_No": {
+      "type": "string"
+    }
+  }
+}
